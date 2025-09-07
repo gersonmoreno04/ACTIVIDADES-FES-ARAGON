@@ -1,15 +1,16 @@
 //MORENO ANAYA GERSON 
 //COMPARAR 3 NUMEROS 
 console.log("Compara 3 numeros");
-let a=parseInt(prompt("Ingresa el A: "));
+let a=parseInt(prompt("Ingresa el A: "));//Pedimos los 3 numeros a comparar
 let b=parseInt(prompt("Ingresa el B: "));
 let c=parseInt(prompt("Ingresa el c: "));
 console.log("A:"+a+", B:"+b+", C:"+c);
 
 if(a == b && a==c){
-    console.log("Todos los numeros son iguales");
+    console.log("Todos los numeros son iguales");//Comparacion de 3 numeros iguales
 }
 else{
+    //Diferentes casos de igualdad
     if(a==b && a!=c){
         console.log("a y b son iguales");
     }
@@ -19,6 +20,7 @@ else{
     if(c==b && c!=a){
         console.log("b y c son iguales");
     }
+    //Para encontrar el mayor
     if(a > b && b > c){
         console.log("El mayor es a");
     }
@@ -30,6 +32,7 @@ else{
             console.log("El mayor es C");
         }
     }
+    //Para encontrar el menor
     if(a<b && a<c){
         console.log("El menor es A");
     }
@@ -41,6 +44,7 @@ else{
             console.log("El menor es C");
         }
     }
+    //Para encontrar el numero de en medio
     if( (a>b && a<c) || (a<b && a>c)){
         console.log("El de en medio es A");
     }
